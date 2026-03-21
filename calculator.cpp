@@ -4,6 +4,10 @@ double add(double a, double b) {
     return a + b;
 }
 
+double subtract(double a, double b) {
+    return a - b;
+}
+
 int main() {
     double first = 0.0;
     double second = 0.0;
