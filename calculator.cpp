@@ -8,6 +8,19 @@ double subtract(double a, double b) {
     return a - b;
 }
 
+double multiply(double a, double b) {
+    return a * b;
+}
+
+bool divide(double a, double b, double result){
+    if (b == 0){
+        return false;
+    }
+    result = a / b;
+    return true;
+}
+
+
 int main() {
     double first = 0.0;
     double second = 0.0;
