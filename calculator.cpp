@@ -39,10 +39,13 @@ int main() {
 
     if (operation == '+') {
         std::cout << "Результат: " << add(first, second) << '\n';
+        std::cout << "Успех!" << endl;
     } else if (operation == '-') {
         std::cout << "Результат: " << subtract(first, second) << '\n';
+        std::cout << "Успех!" << endl;
     } else if (operation == '*') {
         std::cout << "Результат: " << multiply(first, second) << '\n';
+        std::cout << "Успех!" << endl;
     } else if (operation == '/') {
         if (!divide(first, second, result)) {
             std::cout << "Ошибка: деление на ноль\n";
@@ -50,6 +53,7 @@ int main() {
         }
 
         std::cout << "Результат: " << result << '\n';
+        std::cout << "Успех!" << endl;
     } else {
         std::cout << "Ошибка: неизвестная операция\n";
         return 1;
