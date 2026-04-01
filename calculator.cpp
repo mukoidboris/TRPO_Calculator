@@ -27,31 +27,31 @@ int main() {
     double result = 0.0;
     char operation = '\0';
 
-    std::cout << "Calculator\n";
-    std::cout << "Enter first number: ";
+    std::cout << "Калькулятор\n";
+    std::cout << "Введите первое число: ";
     std::cin >> first;
 
-    std::cout << "Enter operation (+, -, *, /): ";
+    std::cout << "Введите операцию (+, -, *, /): ";
     std::cin >> operation;
 
-    std::cout << "Enter second number: ";
+    std::cout << "Введите второе число: ";
     std::cin >> second;
 
     if (operation == '+') {
-        std::cout << "Result: " << add(first, second) << '\n';
+        std::cout << "Результат: " << add(first, second) << '\n';
     } else if (operation == '-') {
-        std::cout << "Result: " << subtract(first, second) << '\n';
+        std::cout << "Результат: " << subtract(first, second) << '\n';
     } else if (operation == '*') {
-        std::cout << "Result: " << multiply(first, second) << '\n';
+        std::cout << "Результат: " << multiply(first, second) << '\n';
     } else if (operation == '/') {
         if (!divide(first, second, result)) {
-            std::cout << "Error: division by zero is not allowed.\n";
+            std::cout << "Ошибка: деление на ноль\n";
             return 1;
         }
 
-        std::cout << "Result: " << result << '\n';
+        std::cout << "Результат: " << result << '\n';
     } else {
-        std::cout << "Error: unknown operation.\n";
+        std::cout << "Ошибка: неизвестная операция\n";
         return 1;
     }
 
